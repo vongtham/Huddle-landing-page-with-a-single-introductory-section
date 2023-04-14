@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+header {
+    background: url('images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    background-position: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+
+.container {
+    max-width: 80%;
+    margin: auto;
+}
+
+nav {
+    padding-top: 2rem;
+}
+
+nav:first-child {
+    width: 150px;
+}
+
+.head-content {
+    margin-top: 2.5rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+    color: #fff;
+    padding-top: 2.5rem;
+}
+
+button {
+    display: block;
+    width: 200px;
+    padding: 0.8rem 0;
+    color: var(--violet);
+    border-radius: 2rem;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.social {
+    padding: 3.5rem 0 1rem 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+li {
+    color: #fff;
+}
+
+@media  screen and (min-width: 376px) {
+    header {
+        background: url('images/bg-desktop.svg');
+        background-color: var(--violet);
+        background-repeat: no-repeat;
+        background-position: cover;
+    }
+}
+
+@media screen and (min-width: 850px) {
+
+    header {
+        background: url('images/bg-desktop.svg');
+        background-color: var(--violet);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .container {
+        max-width: 90%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .head-content {
+        display: flex;
+        gap: 3rem;
+        margin-top: 3rem;
+    }
+
+    nav {
+        padding-top: 3rem
+    }
+
+    nav:first-child {
+        width: 200px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    .image {
+        flex-basis: 60%;
+        align-self: center;
+    }
+    
+    .content {
+        flex-basis: 40%;
+        align-items: start;
+        text-align: left;
+    }
+
+    button {
+        width: 170px;
+        font-size: 1.1rem;
+    }
+
+    .social {
+        position: fixed;
+        right: 80px;
+        bottom: 0;
+        padding-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+}
+
